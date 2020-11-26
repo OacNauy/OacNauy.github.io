@@ -8,7 +8,7 @@
       <p><b>地址：武汉市洪山区珞瑜路1037号华中科技大学，邮编430070</b></p>
     </td>
     <td width="25%">
-      <img src="/zhengjianzhao.JPG" width="100%">      % 插入证件照代码
+      <img src="/zhengjianzhao.JPG" width="100%"> 
     </td>
   </tr>
 </table>
