@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../res/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="../res/css/main.css">
+<!--加载meta IE兼容文件-->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>  
+<body>
+  <div class="header">
+    <div class="menu-btn">
+      <div class="menu"></div>  
+    </div>
+    <h1 class="logo">
+      <a href="index.html">
+        <span>MYBLOG</span>
+         <img src="../res/img/san_ye.png">
+      </a> 
+    </h1>
+    <div class="nav">
+      <a href="index.html" class="active">首页</a>
+      <a href="whisper.html">日常</a>
+      <a href="album.html">履历</a>
+      <a href="about.html"  >关于我</a>
+    </div>
+    <ul class="layui-nav header-down-nav">
+      <li class="layui-nav-item"><a href="index.html" class="active">首页</a></li>
+      <li class="layui-nav-item"><a href="whisper.html">日常</a></li>
+      <li class="layui-nav-item"><a href="album.html"  >履历</a></li>
+      <li class="layui-nav-item"><a href="about.html">关于我</a></li>
+    </ul>
+    <p class="welcome-text">
+      欢迎来到<span class="name">曹志远</span>的个人主页~</br>
+    <audio controls="controls"> <source src="../res/video/summer.mp3" type="audio/mp3"></source> </audio></p>
+  </div>
+
+  <div class="banner">
+    <div class="cont w1000">
+      <div class="title">
+
+        <h4>嗨！朋友。</h4>
+        <h5>欢迎来到曹志远的小世界。</h5>
+        
+      </div>
+      <div class="amount">
+        <p>慢慢走啊，去欣赏。</p>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp—朱光潜</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="cont w1000">
+      <div class="title">
+        <span class="layui-breadcrumb" lay-separator="|">
+          <a href="javascript:;" class="active">我想和你分享滴~</a>
+        </span>
+      </div>
+      <div class="list-item">
+        <div class="item">
+          <div class="layui-fluid">
+            <div class="layui-row">
+              <div class="layui-col-xs12 layui-col-sm4 layui-col-md5">
+                <div class="img"><img src="../res/img/mei_xue0.jpg" alt=""></div>
+              </div> 
+              <div class="layui-col-xs12 layui-col-sm8 layui-col-md7">
+                <div class="item-cont">
+                  <h3>我最喜爱的女歌手，中岛美雪</h3>
+                  <h5>日本国宝级女歌手</h5>
+                  <p>在我看来，中岛美雪的魅力不仅在于对于细腻情感的捕捉，更难能可贵的是她在词曲中展现的人文关怀精神。</p>
+                  <p>点击箭头可以观看中岛美雪演唱会视频哦。</p>  
+                  <a href="https://www.bilibili.com/video/BV1Xt4y1y7tu?from=search&seid=16604292871080276243" class="go-icon"></a>
+                </div>
+            </div>
+            </div>
+           </div>
+        </div>
+        <div class="item">
+          <div class="layui-fluid">
+            <div class="layui-row">
+              <div class="layui-col-xs12 layui-col-sm4 layui-col-md5">
+                <div class="img"><img src="../res/img/mei_shi.jpg" alt=""></div>
+              </div>
+              <div class="layui-col-xs12 layui-col-sm8 layui-col-md7">
+                <div class="item-cont">
+                  <h3>比吃美食更有趣的是做美食</h3>
+                  <h5>番茄鸡蛋拌泡面</h5>
+                  <p>在食堂打的番茄炒鸡蛋，在寝室泡的泡面，虽然简单但是总让我念念不忘。</p>
+ 
+                </div> 
+            </div>
+            </div>
+           </div>
+        </div>
+        
+      </div>
+ 
+    </div>
+  </div>
+
+  <div class="footer-wrap">
+    <div class="footer w1000">
+      <div class="qrcode">
+        <img src="../res/img/erweima.jpg">
+      </div>
+      <div class="practice-mode">
+
+        <div class="text">
+          <h4 class="title">我的联系方式</h4>
+          <p>微信<span class="WeChat">15285410377</span></p>
+          <p>手机<span class="iphone">15285410377</span></p>
+          <p>邮箱<span class="email">365617018@qq.com</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="../res/layui/layui.js"></script>
+  <script type="text/javascript">
+    layui.config({
+      base: '../res/js/util/'
+    }).use(['element','laypage','jquery','menu'],function(){
+      element = layui.element,laypage = layui.laypage,$ = layui.$,menu = layui.menu;
+      laypage.render({
+        elem: 'demo'
+        ,count: 70 //数据总数，从服务端得到
+      });
+      menu.init();
+    })
+  </script>
+  
+ 
+</body>
+</html>
